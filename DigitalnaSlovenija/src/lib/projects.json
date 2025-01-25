@@ -1,0 +1,17 @@
+[
+    {
+        "title": "AvtonetAPI",
+        "description": "Programski vmesnik za dostopanje podatkov na Avto.net-u. Omogoča filtriranje in razvrščanje vozil ter natančnen vpogled v podatke o vozilu.",
+        "comingSoon": false
+    },
+    {
+        "title": "Avtonet Obveščanje",
+        "description": "Spletna aplikacija za obveščanje o novih vozilih na avto.net-u, ki ustrezajo vašim kriterijom. Preprosto vnesite željene kriterije in vaš mail za obveščanje. Vsakič, ko bo vozilo ustrezalo vašim kriterijom boste prejeli mail.",
+        "comingSoon": true
+    },
+    {
+        "title": "NepremicnineNetAPI",
+        "description": "Programski vmesnik za dostopanje podatkov na Nepremičnine.net. Omogoča iskanje in filtriranje nepremičnin ter vpogled v podatke o nepremičnini.",
+        "comingSoon": true
+    }
+]
