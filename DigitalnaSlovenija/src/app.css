@@ -5,6 +5,10 @@
 
 @layer components {
     .content-container {
-        @apply mx-auto max-w-[80rem];
+        @apply mx-auto max-w-[80rem] px-20;
+    }
+
+    .reminder-list-item:hover > .reminder-controls {
+        @apply flex;
     }
 }
