@@ -1,4 +1,4 @@
-# DigitalnaSlovenija - orodja za vsakogar
+# DigitalnaSlovenija - orodje za vsakogar
 
 ### Kaj sploh je to?
 

@@ -5,7 +5,7 @@
 </script>
 
 
-<div class="px-24">
+<div class="content-container">
     <!-- Title, description, contact -->
     <div class="text-center mt-24 mb-16">
         <h1 class="font-bold text-4xl">Digitalna Slovenija</h1>
@@ -13,9 +13,9 @@
     </div>
     
     <!-- Tools -->
-    <div class="mx-auto max-w-[80rem]">
+    <div>
         {#each [false, true] as comingSoonAllowed}
-        <h3 class="mb-2 text-lg font-medium">
+        <h3 class="mb-2 text-lg font-bold">
             {#if comingSoonAllowed}
             Prihaja kmalu
             {:else}

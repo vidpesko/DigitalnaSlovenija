@@ -3,4 +3,8 @@
 @import 'tailwindcss/utilities';
 
 
-@layer components {}
+@layer components {
+    .content-container {
+        @apply mx-auto max-w-[80rem];
+    }
+}

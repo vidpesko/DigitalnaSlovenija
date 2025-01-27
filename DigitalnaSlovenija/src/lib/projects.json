@@ -2,12 +2,14 @@
     {
         "title": "AvtonetAPI",
         "description": "Programski vmesnik za dostopanje podatkov na Avto.net-u. Omogoča filtriranje in razvrščanje vozil ter natančnen vpogled v podatke o vozilu.",
-        "comingSoon": false
+        "comingSoon": false,
+        "btnLink": "https://avtonet-api-main-87b07e5.zuplo.app"
     },
     {
         "title": "Avtonet Obveščanje",
         "description": "Spletna aplikacija za obveščanje o novih vozilih na avto.net-u, ki ustrezajo vašim kriterijom. Preprosto vnesite željene kriterije in vaš mail za obveščanje. Vsakič, ko bo vozilo ustrezalo vašim kriterijom boste prejeli mail.",
-        "comingSoon": true
+        "comingSoon": false,
+        "btnLink": "/avtonet-obvescanje"
     },
     {
         "title": "NepremicnineNetAPI",
