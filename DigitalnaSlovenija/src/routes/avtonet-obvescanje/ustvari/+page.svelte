@@ -24,18 +24,73 @@
                 type="text"
                 placeholder="Email za obveščanje"
                 class="input input-bordered w-full max-w-xs"
+                value="trenutni@mail.com"
             />
         </label>
-        <!-- Avtonet URL -->
-        <label class="form-control w-full max-w-xs">
-            <div class="label">
-                <span class="label-text">Povezava </span>
+        <!-- Filters -->
+        <p class="mb-2 label-text">Izberite filtre:</p>
+        <div class="join join-vertical w-full">
+            <!-- Brand, make -->
+            <div
+                class="collapse collapse-arrow join-item border-base-300 border"
+            >
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                    Znamka, model
+                </div>
+                <div class="collapse-content flex gap-x-4">
+                    <label class="form-control w-full max-w-xs mb-4">
+                        <div class="label">
+                            <span class="label-text"
+                                >Znamka</span
+                            >
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="Audi, BMW,..."
+                            class="input input-bordered w-full max-w-xs"
+                        />
+                    </label>
+                    <label class="form-control w-full max-w-xs mb-4">
+                        <div class="label">
+                            <span class="label-text"
+                                >Model</span
+                            >
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="Audi, BMW,..."
+                            class="input input-bordered w-full max-w-xs"
+                        />
+                    </label>
+                </div>
             </div>
-            <input
-                type="text"
-                placeholder="Email za obveščanje"
-                class="input input-bordered w-full max-w-xs"
-            />
-        </label>
+            <div
+                class="collapse collapse-arrow join-item border-base-300 border"
+            >
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">
+                    Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div
+                class="collapse collapse-arrow join-item border-base-300 border"
+            >
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">
+                    Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+        </div>
+        <!-- Submit -->
+        <button type="submit" class="btn btn-primary mt-6"
+            >Ustvari opomnik</button
+        >
     </form>
 </div>
