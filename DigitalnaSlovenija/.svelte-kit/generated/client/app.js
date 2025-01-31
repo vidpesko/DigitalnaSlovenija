@@ -13,7 +13,7 @@ export const server_loads = [];
 export const dictionary = {
 		"/": [2],
 		"/avtonet-obvescanje": [3],
-		"/avtonet-obvescanje/ustvari": [4]
+		"/avtonet-obvescanje/ustvari": [~4]
 	};
 
 export const hooks = {

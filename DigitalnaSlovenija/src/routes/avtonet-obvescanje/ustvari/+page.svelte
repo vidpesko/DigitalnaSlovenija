@@ -101,6 +101,17 @@
         updateFormData();
         document.getElementById("confirmationModal").showModal();
     }
+
+    async function fetchData() {
+        const res = await fetch("http://localhost:8000/api/avtonet-obvescanje/");
+        const data = await res.json();
+
+        if (res.ok) {
+            return data;
+        } else {
+            throw new Error(data);
+        }
+    }
 </script>
 
 <!-- Inputs -->
@@ -148,7 +159,13 @@
     <h1 class="text-4xl font-semibold">Ustvari opomnik</h1>
 
     <!-- Form -->
-    <form bind:this={reminderForm} action="" class="my-16">
+    <form
+        bind:this={reminderForm}
+        action=""
+        method="post"
+        class="my-16"
+        onsubmit={(event) => event.preventDefault()}
+    >
         <!-- Email -->
         <label class="form-control w-full max-w-xs mb-4">
             <div class="label">
@@ -193,6 +210,9 @@
                 </button>
             </div>
         {/if}
+        <a class="btn btn-error btn-outline" href="/avtonet-obvescanje"
+            >Prekliči</a
+        >
     </form>
 
     <dialog id="confirmationModal" class="modal modal-bottom sm:modal-middle">
@@ -204,15 +224,27 @@
                 <p>Preverite vaše podatke:</p>
                 <ul class="list-disc list-inside">
                     {#each Object.entries(reminderFormData) as [name, value]}
-                    {#if value && name != "filter-accordion"}
-                        <li>{name}: {value}</li>
-                    {/if}
+                        {#if value && name != "filter-accordion"}
+                            <li>{name}: {value}</li>
+                        {/if}
                     {/each}
                 </ul>
+                <!-- Use API to get preview of vehicles -->
                 <p class="my-4">Vozila s izbranimi filtri:</p>
+                <div class="">
+                    {#await fetchData()}
+                        loading
+                    {:then response}
+                    eriwepirjp
+                        {response}
+                    {/await}
+                </div>
             {/if}
             <div class="modal-action">
-                <button class="btn btn-primary">Ustvari</button>
+                <button
+                    onclick={() => reminderForm.submit()}
+                    class="btn btn-primary">Ustvari opomnik</button
+                >
                 <form method="dialog">
                     <!-- if there is a button in form, it will close the modal -->
                     <button class="btn">Prekliči</button>
